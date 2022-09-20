@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>All our flats</h1>
+<div class="container">
+
+
+<div id="flats" class="row">
+  <% @flats.each do |flat| %>
+  <div class="col-3">
+    <div class="card" style="width: 18rem; padding: 1rem;">
+        <%= render flat %>
+        <p>
+          <%= link_to "more info", flat %>
+        </p>
+    </div>
+    <br>
+  </div>
+  <% end %>
+</div>
+
+</div>
+<%= link_to "New flat", new_flat_path %>
