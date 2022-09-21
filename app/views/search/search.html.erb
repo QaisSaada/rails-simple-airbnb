@@ -1,0 +1,14 @@
+<% form_for @search, url => "/xxxxxx" do |f| %>
+
+  <%=f.label :name %>
+  <%=f.text_field :name %>
+
+  <%=f.label "first name or last name" %>
+  <%=f.text_field "first_name_or_last_name" %>
+
+  <%=f.submit %>
+<% end %>
+
+<% @flats.each do |flat| %>
+ <%= # show the attributes of user %>
+<% end %>

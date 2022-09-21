@@ -1,10 +1,25 @@
-<p style="color: green"><%= notice %></p>
+<div class="container" >
+  <p style="color: green"><%= notice %></p>
 
-<%= render @flat %>
+    <%= render @flat %>
 
-<div>
-  <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
-  <%= link_to "Back to flats", flats_path %>
+    <div >
 
-  <%= button_to "Destroy this flat", @flat, method: :delete %>
+        <li class="fa-regular fa-pen-to-square">
+      <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
+        </li>
+          <br>
+                <br>
+
+        <li class="fa-solid fa-left-long">
+      <%= link_to "Back to flats", flats_path %>
+        </li>
+          <br>
+          
+        <li class="btn btn-outline-danger">
+      <%= button_to "Destroy this flat", @flat, method: :delete %>
+        </li>
+  </div>
 </div>
+
+

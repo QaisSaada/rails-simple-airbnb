@@ -1,7 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>All our flats</h1>
 <div class="container">
+  <h1>All our flats</h1>
+
 
 
 <div id="flats" class="row">
@@ -18,5 +19,6 @@
   <% end %>
 </div>
 
+         <h4 class="fa-solid fa-circle-plus" > <%= link_to "Make a new flat", new_flat_path %> </h4>
+
 </div>
-<%= link_to "New flat", new_flat_path %>

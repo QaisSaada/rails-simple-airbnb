@@ -70,3 +70,6 @@ end
 
 gem "simple_form", github: "heartcombo/simple_form"
 
+gem 'rails-simple-search'
+
+
